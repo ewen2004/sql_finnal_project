@@ -1,0 +1,138 @@
+/* 自定义Swagger UI主题 */
+:root {
+  --theme-color: #2196F3;
+  --text-color: #333;
+  --background-color: #f5f7f9;
+  --header-bg: #1976D2;
+}
+
+body {
+  margin: 0;
+  font-family: "Microsoft YaHei", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--background-color);
+}
+
+.swagger-ui .topbar {
+  background-color: var(--header-bg);
+  padding: 15px 0;
+}
+
+.swagger-ui .info .title {
+  color: #0D47A1;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.swagger-ui .info .title small.version-stamp {
+  background-color: #039be5;
+}
+
+.swagger-ui .info p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* 操作块样式 */
+.swagger-ui .opblock-tag {
+  font-size: 20px;
+  margin: 20px 0 10px 0;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.swagger-ui .opblock.opblock-post {
+  border-color: #4CAF50;
+  background: rgba(76, 175, 80, 0.1);
+}
+
+.swagger-ui .opblock.opblock-get {
+  border-color: #2196F3;
+  background: rgba(33, 150, 243, 0.1);
+}
+
+.swagger-ui .opblock.opblock-put {
+  border-color: #FFC107;
+  background: rgba(255, 193, 7, 0.1);
+}
+
+.swagger-ui .opblock.opblock-delete {
+  border-color: #F44336;
+  background: rgba(244, 67, 54, 0.1);
+}
+
+.swagger-ui .opblock-summary-method {
+  font-weight: bold;
+}
+
+/* 按钮样式 */
+.swagger-ui .btn {
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.swagger-ui .btn.execute {
+  background-color: var(--theme-color);
+  transition: background-color 0.3s;
+}
+
+.swagger-ui .btn.execute:hover {
+  background-color: #0D47A1;
+}
+
+/* 参数表格样式 */
+.swagger-ui table tbody tr td {
+  padding: 12px 0;
+}
+
+.swagger-ui .parameters-col_description {
+  font-size: 14px;
+}
+
+/* 模型样式 */
+.swagger-ui section.models {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 20px 0;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.swagger-ui section.models.is-open h4 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* 响应区域样式 */
+.swagger-ui .responses-wrapper {
+  padding: 15px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* 修复顶部导航栏 */
+.swagger-ui .topbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* 修改滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
